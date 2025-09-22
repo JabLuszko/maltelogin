@@ -71,7 +71,7 @@ async def main(cion_mode: bool):
     server_config = uvicorn.Config(app, port=port, host=host, log_config=None)
     server = uvicorn.Server(server_config)
 
-    logger.info(f"Starting Xilriws on http://{host}:{port}")
+    logger.info(f"Starting (my) Xilriws on http://{host}:{port}")
 
     await server.serve()
 
